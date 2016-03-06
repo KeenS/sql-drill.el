@@ -72,8 +72,8 @@
 
 
 (defcustom sql-drill-program
-  (or (executable-find "sqlline")
-      (executable-find "drill-embedded"))
+  (or (executable-find "drill-embedded")
+      (executable-find "sqlline"))
   "Command to start drill client")
 
 (defcustom sql-drill-options nil
