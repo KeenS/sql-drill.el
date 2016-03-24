@@ -6,7 +6,7 @@
 ;; Author: Sunrin KIM(¦Êeen <3han5chou7@gmail.com
 ;; Maintainer: Sunrin KIM <3han5chou7@gmail.com
 ;; Version: 0.0.1
-;; URL: https://github.com/KeenS/cssfmt.el
+;; URL: https://github.com/KeenS/sql-drill.el
 ;; Keywords: comm languages processes
 ;; This file is not part of GNU Emacs.
 ;;
@@ -74,7 +74,8 @@
 (defcustom sql-drill-program
   (or (executable-find "drill-embedded")
       (executable-find "sqlline"))
-  "Command to start drill client")
+  "Command to start drill client"
+  :group 'SQL)
 
 (defcustom sql-drill-options nil
   "List of additional options for `sql-drill-program'."
